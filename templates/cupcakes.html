@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cupcake Display</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
 </head>
 <body>
+    <h1>Cupcake Display</h1>
+    <br><br><br>
+
+    <div id="nav">
+        <ul>
+        <li><a href="{{ url_for('home') }}"><h6>Home</h6></a></li>
+        <li><a href="{{ url_for('order') }}"><h6>Orders</h6></a></li>
+        <li><a href="{{ url_for('all_cupcakes') }}"><h6>Cupcake Display</h6></a></li>
+        </ul>
+    </div>
+
+<h2>Click A Cupcake's Name For More Info</h2>
+
     {% for cupcake in cupcakes %}
     <a href="{{ url_for('individual_cupcake', name=cupcake['name']) }}">
         <h3>{{ cupcake["name"] }}</h3>
@@ -16,10 +29,10 @@
         <h4>Flavor: {{ cupcake['flavor'] }}</h4>
         <h4>Frosting: {{ cupcake['frosting'] }}</h4>
         <h4>Price: {{ cupcake['price'] }}</h4>
-        <h4>Sprinkles: {{ cupcake['sprinkles'] }}</h4>
         <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
             <button>Add to Cart</button>
         </a>
+        <br><br>
     {% endfor %}
 </body>
 </body>

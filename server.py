@@ -24,12 +24,12 @@ def add_cupcake(name):
 
 @app.route('/individual_cupcake/<name>')
 def individual_cupcake(name):
-    cupcake = find_cupcake("cupcakes.csv", name)
+    cupcake = find_cupcake('cupcakes.csv', name)
     
     if cupcake:
-        return render_template("individual_cupcake.html", cupcake=cupcake)
+        return render_template('individual_cupcake.html', cupcake=cupcake)
     else:
-        return "Sorry cupcake not found."
+        return 'Sorry cupcake not found.'
 
 @app.route('/order')
 def order():

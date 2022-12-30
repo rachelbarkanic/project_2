@@ -4,5 +4,48 @@ body {
     background-repeat:no-repeat;
     background-position: center;
     background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav {
+    flex-wrap: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    width: 30vw;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 18px 0;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+header {
+    font-size: 50px;
+}
+
+a {
+    color: rgb(233, 226, 233);
+}
+
+a:hover {
+    color: rgb(212, 57, 129);
+}
+
+button {
+    background-color: rgb(244, 244, 244);
+    color: rgb(237, 100, 157);
+}
+
+#cupcake {
 
 }
