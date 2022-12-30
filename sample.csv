@@ -1,0 +1,5 @@
+size,name,price,flavor,frosting,sprinkles,filling
+mini,Chocolate,1.99,Chocolate,White,['chocolate'],
+regular,Unicorn,3.99,vanilla,chocolate,['rainbow'],strawberry
+giant,Peach Cobbler,9.99,peach,vanilla,['cinnamon sugar'],peach
+regular,Death by Chocolate,3.99,Chocolate,chocolate,['chocolate'],chocolate
