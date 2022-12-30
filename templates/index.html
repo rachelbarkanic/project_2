@@ -13,11 +13,14 @@
     
     <div id="nav">
         <ul>
-        <li><a href="{{ url_for('home') }}"><h6>Home</h6></a></li>
-        <li><a href="{{ url_for('order') }}"><h6>Orders</h6></a></li>
-        <li><a href="{{ url_for('all_cupcakes') }}"><h6>Cupcake Display</h6></a></li>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('order') }}">Orders</a></li>
+        <li><a href="{{ url_for('all_cupcakes') }}">Cupcake Display</a></li>
         </ul>
     </div>
-
+<br><br><br><br><br>
+    <div id="home-pic-div">
+        <img src="{{url_for('static', filename='images/sprinkle.jpeg')}}" id="home-pic"/>
+        </div>  
 </body>
 </html>

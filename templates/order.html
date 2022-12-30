@@ -14,19 +14,21 @@
 <main>
     <div id="nav">
         <ul>
-        <li><a href="{{ url_for('home') }}"><h6>Home</h6></a></li>
-        <li><a href="{{ url_for('order') }}"><h6>Orders</h6></a></li>
-        <li><a href="{{ url_for('all_cupcakes') }}"><h6>Cupcake Display</h6></a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('order') }}">Orders</a></li>
+            <li><a href="{{ url_for('all_cupcakes') }}">Cupcake Display</a></li>
         </ul>
     </div>
     <div id ='cupcake'>
     {% for cupcake in cupcakes %}
+    <br>
     <h3>{{ cupcake['name'] }}</h3>
     <h4>Flavor: {{ cupcake['flavor'] }}</h4>
     <h4>Frosting: {{ cupcake['frosting'] }}</h4>
     <h4><b>Price: ${{ cupcake['price'] }}</b></h4>
     {% endfor %}
     </div>
+
 </main>
 </body>
 </html>

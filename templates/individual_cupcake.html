@@ -17,14 +17,15 @@
         <br><br><br>
         <div id="nav">
             <ul>
-            <li><a href="{{ url_for('home') }}"><h6>Home</h6></a></li>
-            <li><a href="{{ url_for('order') }}"><h6>Orders</h6></a></li>
-            <li><a href="{{ url_for('all_cupcakes') }}"><h6>Cupcake Display</h6></a></li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('order') }}">Orders</a></li>
+                <li><a href="{{ url_for('all_cupcakes') }}">Cupcake Display</a></li>
             </ul>
         </div>
 
             <div class="cupcake-container">
                 <h3>Name: {{ cupcake["name"] }}</h3>
+                <br>
                 <h4>Flavor: {{ cupcake["flavor"] }}</h4>
                 <h4>Frosting: {{ cupcake["frosting"] }}</h4>
                 <h4>Price: ${{ cupcake["price"] }}</h4>

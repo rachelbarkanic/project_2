@@ -1,5 +1,5 @@
 body {
-    color: pink;
+    color: rgb(184, 97, 174);
     background-image: url('images/container.jpeg');
     background-repeat:no-repeat;
     background-position: center;
@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #nav {
@@ -46,6 +47,18 @@ button {
     color: rgb(237, 100, 157);
 }
 
-#cupcake {
+#home-pic {
+    top: 50%;
+	height: 250px;
+	width: 500px;
+	border-radius: 20%;
+	box-shadow: 5px 5px 20px #c04baa;
+}
 
+h2 {
+    color: #d835ba;
+}
+
+h3 {
+    color: #35a2d8;
 }
