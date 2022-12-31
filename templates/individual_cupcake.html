@@ -23,13 +23,14 @@
             </ul>
         </div>
 
-            <div class="cupcake-container">
-                <h3>Name: {{ cupcake["name"] }}</h3>
+            <div id="'indiv" class="cupcake-container">
+                <h3 class="cupcake-container">Name: {{ cupcake["name"] }}</h3>
                 <br>
                 <h4>Flavor: {{ cupcake["flavor"] }}</h4>
                 <h4>Frosting: {{ cupcake["frosting"] }}</h4>
                 <h4>Price: ${{ cupcake["price"] }}</h4>
                 <h4>Sprinkles: {{ cupcake['sprinkles'] }}</h4>
+                <h4>Filling: {{ cupcake['filling'] }}</h4>
                 <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
                     <button>Add to Cart</button>
                 </a>
