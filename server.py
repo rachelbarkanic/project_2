@@ -34,7 +34,7 @@ def individual_cupcake(name):
 @app.route('/order')
 def order():
     cupcakes = get_cupcakes('orders.csv')
-    order_total = []
+
 
     return render_template('order.html', cupcakes = cupcakes)
 

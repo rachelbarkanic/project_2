@@ -20,6 +20,10 @@ body {
     top: 15%;
     left: 50%;
     width: 30vw;
+    background-image: url('images/sprinkle.jpeg');
+    background-position: center;
+    background-size: 100vw;
+	box-shadow: 5px 5px 20px #c04baa;
 }
 
 ul {
@@ -35,11 +39,11 @@ header {
 }
 
 a {
-    color: rgb(233, 226, 233);
+    color: rgb(7, 7, 7);
 }
 
 a:hover {
-    color: rgb(212, 57, 129);
+    color: rgb(57, 65, 212);
 }
 
 button {
